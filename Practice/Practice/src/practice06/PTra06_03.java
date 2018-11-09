@@ -19,6 +19,12 @@ public class PTra06_03 {
 		 * ■
 		 * ■
 		 */
-
+		
+		System.out.println("出力結果例");
+		System.out.println("-----------------------------------");
+		for(int i = 0;i <= 5;i++) {
+			System.out.println("■");
+			
+		}
 	}
 }

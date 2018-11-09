@@ -12,12 +12,12 @@ public class PTra04_05 {
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
-		boolean winFlg = false;
+		boolean winFlg = true;
 
 		System.out.print("じゃんけんゲームを開始します。");
 
 		// 変数winFlgがtrueだった場合にループが終わります
-		while (!winFlg /* winFlg == falseと同じ意味 */) {
+		while (true /* winFlg == falseと同じ意味 */) {
 
 			System.out.println("あなたの手は？");
 			System.out.println("0:グー、1：チョキ、2：パー");
