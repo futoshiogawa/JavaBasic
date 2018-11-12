@@ -28,12 +28,12 @@ public class Util {
 	 * @param message	表示する文字列
 	 * @param millisecond	間隔をあけるミリ秒（1000で1秒）
 	 */
-	public static void dispMessageSlowly(String message, long millisecond) {
+	public static void dispMessageSlowly(String message, long halfmillisecond) {
 		char[] array = message.toCharArray();
 		for (int i = 0; i < message.length(); i++) {
 			System.out.print(array[i]);
 			try {
-				Thread.sleep(millisecond);
+				Thread.sleep(halfmillisecond);
 			} catch (InterruptedException e) {
 				/* エラーが発生した場合はここにくる */
 			}
@@ -49,6 +49,11 @@ public class Util {
 		List<String> list = Arrays.asList(array);
 		Collections.shuffle(list);
 		return (String[]) list.toArray();
+	}
+
+	public static String shuffleArray(String string) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
 	}
 
 }
