@@ -7,6 +7,9 @@ package practice08;
  */
 
 public class PTra08_05 {
+	private static char[] quadrangle;
+	private static char[] triangle;
+
 	public static void main(String[] args) {
 		// 入力型プログラムです。
 		// 下記の命令は、入力型プログラムで必要な記述になります。
@@ -32,7 +35,13 @@ public class PTra08_05 {
 		int choice = scanner.nextInt();
 
 		// ★ 変数choiceの中が、1であれば四角形の面積を算出するメソッドを、2であれば三角形の面積を算出するメソッドを呼び出してください
-
+		if (choice == 1) {
+			double ans = quadrangle(width, height);
+			System.out.println(ans);
+		} else if (choice == 2) {
+			double ans = triangle(width, height);
+			System.out.println(ans);
+		}
 	}
 
 	/*
@@ -44,7 +53,9 @@ public class PTra08_05 {
 	 *
 	 * 引数で渡された横の長さ(width)と縦の長さ(height)から、四角形の面積を返すメソッド
 	 */
-
+	public static double quadrangle(double width, double height) {
+		return width * height;
+	}
 
 	/*
 	 * ★ 以下の仕様でメソッドを作成してください
@@ -55,5 +66,7 @@ public class PTra08_05 {
 	 *
 	 * 引数で渡された横の長さ(width)と縦の長さ(height)から、三角形の面積を返すメソッド
 	 */
-
+	public static double triangle(double width, double height) {
+		return width * height / 2;
+	}
 }
