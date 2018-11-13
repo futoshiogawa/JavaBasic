@@ -16,11 +16,11 @@ public class PTra09_02 {
 
 		// ★ 配列arrayを、Util内のメソッドを用いてランダムに並び替えてください
 		// ※ Utilはインポートしても良いし、完全限定名で記述しても良いです
-		String[] random  = Util.shuffleArray(array);
-		String[] random1  = Util.shuffleArray(string);
-
+		Util.shuffleArray(array);
 
 		// ★ ランダムに並び替えた後の配列を前から順に全て表示してください
-		System.out.println(random1);
+		for(String element : array) {
+			System.out.println(element);  
+		}
 	}
 }
